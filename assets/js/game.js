@@ -166,8 +166,28 @@ var randomNumber = function(min, max) {
   };
   
   /* END GAME FUNCTIONS */
+
+
+
+// function to set name
+var getPlayerName = function() {
+    var name = "";
+  
+    while (name === "" || name === null) {
+        name = prompt("What is your robot's name?");
+      }
+  
+    console.log("Your robot's name is " + name);
+    return name;
+  };
+
+
   
   /* GAME INFORMATION / VARIABLES */
+
+  var playerInfo = {
+    name: getPlayerName(),
+
   
   // player information
   var playerInfo = {
